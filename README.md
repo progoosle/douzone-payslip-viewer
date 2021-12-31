@@ -1,14 +1,18 @@
-# 더존 급여명세서 뷰어
+# 더존 급여명세서 뷰어 for Bucketplace
 
+본 프로젝트는 https://github.com/progoosle/douzone-payslip-viewer 를 버킷플레이스에 맞게 업데이트한 것입니다.
+
+
+ 
 설치 프로그램 없이 모든 브라우저에서 사용할 수 있는 급여명세서 뷰어입니다.
 
-바로 이동 ➡️ https://pay.rajephon.dev
+바로 이동 ➡️ https://payslip.dev.dailyhou.se
 
 ## 사용
 
-1. [뷰어 사이트](https://pay.rajephon.dev)에 접속하세요.
-2. 급여명세서(.htm 확장자) 파일을 업로드하세요.
-3. 주민등록번호 뒷자리를 입력하세요.
+1. [뷰어 사이트](https://payslip.dev.dailyhou.se)에 접속하세요.
+2. 급여명세서(.html 확장자) 파일을 업로드하세요.
+3. 생년월일 8자리를 입력하세요.
 4. 확인 버튼을 누르세요.
 5. 급여를 확인합니다.💰
 

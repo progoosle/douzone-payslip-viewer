@@ -38,8 +38,10 @@ function App() {
         <>
             <Row>
                 <Col {...layout} >
+                
+                <p />
                     <Typography>
-                        <Title>더존 급여명세서 뷰어</Title>
+                        <Title><img src="bucketplace-payslip-title.png" style={{width: '100%'}} /></Title>
                     </Typography>
                     <Divider/>
                     <PaperForm onSubmit={onSubmit}/>
@@ -55,9 +57,9 @@ function App() {
                 <Col {...layout} >
                     <Typography>
                         <Paragraph>
-                            트래픽 분석을 위한 <a href="https://www.google.com/analytics/web/">구글 애널리틱스</a> 기본 페이지 접속 정보 수집 외 <strong>급여명세서, 주민등록번호를 포함한 그 어떠한 정보도 수집하지 않으며, 또한 서버로 전송하지 않습니다.</strong> 모든 복호화 처리는 로컬에서 이루어집니다.
+                            본 서비스는 <a href="https://github.com/progoosle/douzone-payslip-viewer">https://github.com/progoosle/douzone-payslip-viewer</a>를 가져와서 버킷플레이스에 맞게 변형되어 제공되므로 안심하고 사용하셔도 됩니다.
                         </Paragraph>
-                        Developed by <a href="https://rajephon.dev">rajephon</a> / <a href="https://github.com/rajephon/douzone-payslip-viewer">깃허브 <GithubOutlined /></a> / <a href="https://github.com/rajephon/douzone-payslip-viewer/issues">버그 리포트</a>
+                        관련 문의: <a href="mailto:yh.kim@bucketplace.net">@구슬</a>
                     </Typography>
                 </Col>
             </Row>

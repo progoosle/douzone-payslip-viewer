@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: payslip
+  namespace: goosle
+spec:
+  selector:
+    matchLabels:
+      app: payslip
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: payslip
+    spec:
+      containers:
+      - name: payslip
+        image: 387471694114.dkr.ecr.ap-northeast-2.amazonaws.com/goosle-dev/payslip:latest
+        ports:
+        - containerPort: 3000
+        command: ['bash', '-c', 'tail -f /dev/null']
+      

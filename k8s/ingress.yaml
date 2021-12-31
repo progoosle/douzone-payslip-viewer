@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  name: payslip
+  namespace: goosle
+spec:
+  rules:
+  - host: payslip.dev1.dailyhou.se
+    http:
+      paths:
+      - backend:
+          service:
+            name: payslip
+            port:
+              number: 80
+        path: /
+        pathType: Prefix

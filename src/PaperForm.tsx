@@ -73,14 +73,14 @@ const PaperForm = ({onSubmit}: { onSubmit: (content: string, key: string) => voi
                         <p className="ant-upload-drag-icon">
                             <InboxOutlined/>
                         </p>
-                        <p className="ant-upload-text">급여명세서 .htm 파일을 선택해주세요</p>
+                        <p className="ant-upload-text">급여명세서 .html 파일을 선택해주세요</p>
                         <p className="ant-upload-hint">드래그 앤 드랍 가능</p>
                     </Upload.Dragger>
                 </Form.Item>
             </Form.Item>
-            <Form.Item label="주민등록번호 뒤 7자리" validateStatus={keyError ? "error" : undefined}
+            <Form.Item label="생년월일 8자리" validateStatus={keyError ? "error" : undefined}
                        help={keyError ? "올바른 값을 입력해주세요." : undefined} required>
-                <Input.Password placeholder="*******" value={key} onChange={(e) => {
+                <Input.Password placeholder="19950123" value={key} onChange={(e) => {
                     setKey(e.currentTarget.value)
                 }}/>
             </Form.Item>
